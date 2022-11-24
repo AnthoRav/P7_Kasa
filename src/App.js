@@ -1,18 +1,20 @@
 import React from "react"
 import "./App.css"
 import { Routes, Route } from "react-router-dom"
-import Home from './pages/Home'
-import Header from './components/Header/Header'
-import Error from './components/Error/Error'
+import Home from './pages/Home/Home'
+import Error from './pages/Error/Error'
+import LodgingCard from './pages/LodgingCard/LodgingCard'
+import About from './pages/About/About'
 
 function App() {
   return (
       <div className="App">
-          <Header />
           <Routes>
               <Route path="/" element={<Home />} />
-              
+              <Route path="/lodgings/:id" element={<LodgingCard />} />
+              <Route path="/about" element={<About />} />
               <Route path="/*" element={<Error />} />
+              <Route path="/lodgings/*" element={<Error />} />
           </Routes>
       </div>
   )
