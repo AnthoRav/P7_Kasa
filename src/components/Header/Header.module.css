@@ -1,5 +1,5 @@
 .header {
-    margin: 40px 100px 25px 100px;
+    margin: 40px 100px 50px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +9,7 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 14%;
+    width: 20%;
     font-size: 24px;
     font-weight: 500;
     /* font-family: 'Montserrat'; */
