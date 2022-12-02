@@ -1,0 +1,6 @@
+.collapse {
+    margin: 0 24px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}

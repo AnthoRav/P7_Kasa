@@ -1,0 +1,82 @@
+.container {
+    margin: 26px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.tags {
+    display: flex;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6060;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 25px;
+    min-width: 115px;
+    padding: 0 10px 0 10px;
+    margin: 20px 10px 0 0;
+}
+
+.infoRight {
+    
+
+}
+
+.hostInfo {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hostName {
+    width : min-content;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    
+}
+
+.hostPicContainer {
+    height: 64px;
+    width: 64px;
+}
+
+.hostPicture {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.rating {
+
+}
+
+.star {
+    height: 30px;
+}

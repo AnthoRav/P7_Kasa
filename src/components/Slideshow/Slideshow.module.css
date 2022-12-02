@@ -1,0 +1,41 @@
+.container {
+    margin: 0 100px;
+    height: 415px;
+    position: relative;
+}
+
+.slider {
+    height: 415px;
+    border-radius: 25px;
+}
+
+.image {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+.leftArrow {
+    position: absolute;
+    top: 38%;
+    left: 23px;
+    cursor: pointer;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 38%;
+    right: 23px;
+    cursor: pointer;
+}
+
+.number {
+    position: absolute;
+    bottom: 23px;
+    right: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
