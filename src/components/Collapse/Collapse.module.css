@@ -38,3 +38,44 @@
     text-align: start;
     width: auto;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        padding-right: 50px;
+    }
+    .title {
+        font-size: 20px;
+        height: 40px;
+    }
+    .content {
+        font-size: 18px;
+    }
+    .arrow {
+        height: 24px;
+     }
+     .arrowup {
+         height: 24px;
+     }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-bottom: 20px;
+        padding-right: 20px;
+    }
+    .title {
+        font-size: 13px;
+        height: 30px;
+        padding: 0 12px;
+    }
+    .content {
+        font-size: 12px;
+        padding: 18px 12px;
+    }
+    .arrow {
+       height: 20px;
+    }
+    .arrowup {
+        height: 20px;
+    }
+}

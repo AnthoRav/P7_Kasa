@@ -18,8 +18,38 @@
 
 .title {
     font-size: 48px;
-    font-size: 500;
+    font-weight: 500;
     position: absolute;
     color: white;
     /* font-family: "Montserrat"; */
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .banner {
+        margin: 0 50px 30px 50px;
+    }
+    .img {
+        border-radius: 20px;
+        height: 167px;
+    } 
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        margin: 0 20px 20px 20px;
+        border-radius: 10px;
+    }
+    .img {
+        border-radius: 10px;
+        height: 111px;
+    } 
+    .title {
+        width: 217px;
+        font-size: 24px;
+        text-align: left;
+        left: 36px;
+    }
 }

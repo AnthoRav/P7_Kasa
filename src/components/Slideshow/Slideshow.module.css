@@ -39,3 +39,60 @@
     font-weight: 500;
     color: white;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        margin: 0 50px;
+        height: 345px;
+    }
+    .slider {
+        height: 345px;
+        border-radius: 15px;
+    }
+    .image {
+        height: 345px;
+        border-radius: 15px;
+    }
+    .number {
+        bottom: 16px;
+        font-size: 16px;
+    }
+    .leftArrow {
+        top: 38%;
+        left: 10px;
+    }
+    .rightArrow {
+        top: 38%;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 20px;
+        height: 255px;
+    }
+    .slider {
+        height: 255px;
+        border-radius: 10px;
+    }
+    .image {
+        height: 255px;
+        border-radius: 10px;
+    
+    }
+    .number {
+        bottom: 10px;
+        font-size: 14px;
+    }
+    .leftArrow {
+        height: 40px;
+        top: 45%;
+        left: 0px;
+    }
+    .rightArrow {
+        height: 40px;
+        top: 45%;
+        right: 0px;
+    }
+}

@@ -3,18 +3,42 @@
     height: 210px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .logo{
     width: 122px;
     height: 40px;
-
+    margin-bottom: 27px;
 }
 
 .text{
     color: white;
     font-size: 24px;   
     font-weight: 500;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .footer{
+        justify-content: center;
+    }
+    .logo{
+        margin-bottom: 12px;
+    }
+    .text{
+        font-size: 20px;   
+    }
+}
+
+@media (max-width: 480px) {
+    .footer{
+        justify-content: center;
+    }
+    .logo{
+        margin-bottom: 12px;
+    }
+    .text{
+        font-size: 12px;   
+    }
 }

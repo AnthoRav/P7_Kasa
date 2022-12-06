@@ -7,7 +7,7 @@ import AboutCSS from '../About/About.module.css'
 function About() {
   return (
     <div>
-        <Banner src={BannerImgAbout} alt={'Photo de montagne'} />
+        <Banner src={BannerImgAbout} alt={'Photo de montagne'} className={AboutCSS.banner} />
         <div className={AboutCSS.collapse}>
             <Collapse 
             title="Fiabilité"

@@ -1,3 +1,20 @@
 .collapse {
     margin: 0 210px 200px 210px;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .collapse {
+        margin: 0 50px 100px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .collapse {
+        margin: 0 20px 100px 20px;
+        margin-bottom: 50px;
+    }
+    .banner {
+        height: 223px;
+        margin-bottom: 50px;
+    }
+}

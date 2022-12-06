@@ -42,4 +42,37 @@
     width: 300px;
     text-decoration: none;
     padding: 20px;
+    text-align: left;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .gallery {
+        margin: 0 50px 0 50px;
+        border-radius: 20px 20px 0 0;
+        padding: 26px 20px 6px 20px;
+        justify-content: space-evenly;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        margin: 0 20px 0 20px;
+        background-color: white;
+        padding: 0px;
+        justify-content: center;
+    }
+    .card {
+        max-width: 335px;
+        height: 255px;
+        margin-bottom: 20px;
+    }
+    .cover {
+        height: 335px;
+    }
+    .title {
+        padding: 0px 10px 15px 20px;
+    }
 }
