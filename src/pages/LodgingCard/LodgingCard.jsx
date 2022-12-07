@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse/Collapse'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import LodgingCardCSS from '../LodgingCard/LodgingCard.module.css'
@@ -8,16 +8,20 @@ import Infos from '../../components/Infos/Infos'
 
 function LodgingCard() {
     let { id } = useParams()
-    // useEffect(() => {
-    //     let lodging = Lodgings.find((lodging) => id === lodging.id)
-    // })
+    const navigate = useNavigate();
+    useEffect(() => {
+         let lodging = Lodgings.find((lodging) => id === lodging.id)
+         if (!lodging) {
+          navigate ("/*" )
+         }
+    });
 
     return (
         <div>
             {Lodgings.filter((lodging) => lodging.id === id).map(
                (lodging, index) => (
                 <div>
-                    <Slideshow key={lodging.id} images={lodging.pictures} />
+                    <Slideshow key={lodging.pictures.toString()} images={lodging.pictures} />
                     <Infos key={lodging.title} infos={lodging} />
                         <div className={LodgingCardCSS.collapse}>
                             <Collapse 

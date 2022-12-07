@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/Card/Card"
 import Banner from '../../components/Banner/Banner'
-import BannerImg from '../../assets/Banner_img.jpg'
+import BannerImg from '../../assets/banner_img2.jpeg'
 
 
 function Home() {

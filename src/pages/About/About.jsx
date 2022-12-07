@@ -1,13 +1,15 @@
 import React from 'react'
 import Banner from '../../components/Banner/Banner'
-import BannerImgAbout from '../../assets/Banner_about.jpg'
+import BannerImgAbout from '../../assets/banner_about2.jpeg'
 import Collapse from '../../components/Collapse/Collapse'
 import AboutCSS from '../About/About.module.css'
 
 function About() {
   return (
     <div>
-        <Banner src={BannerImgAbout} alt={'Photo de montagne'} className={AboutCSS.banner} />
+        <div className={AboutCSS.banner}>
+            <Banner src={BannerImgAbout} alt={'Photo de montagne'}  />
+        </div>
         <div className={AboutCSS.collapse}>
             <Collapse 
             title="Fiabilité"
