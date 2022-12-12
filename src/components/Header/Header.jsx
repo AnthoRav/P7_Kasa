@@ -3,7 +3,7 @@ import Img from "../../assets/LOGO.png";
 import { Link } from "react-router-dom";
 import HeaderCSS from "../Header/Header.module.css"
 
-export default function Header() {
+function Header() {
    return (
       <header className={HeaderCSS.header}>
         <img className={HeaderCSS.logo} src={Img} alt="logo de Kasa" />
@@ -18,3 +18,4 @@ export default function Header() {
       </header>
    );
 }
+export default Header

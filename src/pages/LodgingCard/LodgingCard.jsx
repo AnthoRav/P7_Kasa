@@ -19,9 +19,9 @@ function LodgingCard() {
     return (
         <div>
             {Lodgings.filter((lodging) => lodging.id === id).map(
-               (lodging, index) => (
+               (lodging) => (
                 <div>
-                    <Slideshow key={lodging.pictures.toString()} images={lodging.pictures} />
+                    <Slideshow key={lodging.pictures} images={lodging.pictures} />
                     <Infos key={lodging.title} infos={lodging} />
                         <div className={LodgingCardCSS.collapse}>
                             <Collapse 

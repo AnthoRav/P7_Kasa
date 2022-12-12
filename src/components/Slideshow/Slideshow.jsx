@@ -18,6 +18,7 @@ function Slideshow({images}) {
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
+    const noArrow = []
     
     return (
         <div className={SlideshowCSS.container}>
@@ -29,11 +30,15 @@ function Slideshow({images}) {
                  className={SlideshowCSS.image}
                 />
             </div>
-            <img src={leftArrow} className={SlideshowCSS.leftArrow} onClick={goToPrevious} />
+            <img src={images.length === 1 ? noArrow : leftArrow} 
+                className={SlideshowCSS.leftArrow} onClick={goToPrevious} 
+            />
             <div className={SlideshowCSS.number}>
-                {currentIndex + 1}/{images.length}
+            {currentIndex + 1}/{images.length}
             </div>
-            <img src ={rightArrow} className={SlideshowCSS.rightArrow} onClick={goToNext} />
+            <img src ={images.length === 1 ? noArrow : rightArrow} 
+                className={SlideshowCSS.rightArrow} onClick={goToNext} 
+            />
         </div>
     )
 }
