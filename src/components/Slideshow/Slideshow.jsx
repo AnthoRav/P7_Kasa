@@ -30,13 +30,15 @@ function Slideshow({images}) {
                  className={SlideshowCSS.image}
                 />
             </div>
-            <img src={images.length === 1 ? noArrow : leftArrow} 
+            <img src={images.length === 1 ? noArrow : leftArrow}
+                alt="flèche gauche"
                 className={SlideshowCSS.leftArrow} onClick={goToPrevious} 
             />
             <div className={SlideshowCSS.number}>
             {currentIndex + 1}/{images.length}
             </div>
-            <img src ={images.length === 1 ? noArrow : rightArrow} 
+            <img src ={images.length === 1 ? noArrow : rightArrow}
+                alt="flèche droite" 
                 className={SlideshowCSS.rightArrow} onClick={goToNext} 
             />
         </div>

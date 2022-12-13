@@ -20,7 +20,7 @@ function LodgingCard() {
         <div>
             {Lodgings.filter((lodging) => lodging.id === id).map(
                (lodging) => (
-                <div>
+                <div key={lodging.id}>
                     <Slideshow key={lodging.pictures} images={lodging.pictures} />
                     <Infos key={lodging.title} infos={lodging} />
                         <div className={LodgingCardCSS.collapse}>

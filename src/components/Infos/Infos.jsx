@@ -36,13 +36,15 @@ function Infos({ infos }) {
                     {infos.host.name}
                 </div>
                 <div className={InfosCSS.hostPicContainer}>
-                    <img className={InfosCSS.hostPicture} src={infos.host.picture} alt= 'Photo du propriétaire du logment' />
+                    <img className={InfosCSS.hostPicture} 
+                    src={infos.host.picture} 
+                    alt= 'Propriétaire du logment' />
                 </div>
             </div>
             <div className={InfosCSS.rating}>
                 {rating.map((stars, index) => 
                 <img className={InfosCSS.star}
-                key={stars+infos.id+index} 
+                key={stars + infos.id + index} 
                 src={stars ? FullStar : EmptyStar}
                 alt={stars ? 'étoile pleine' : 'étoile vide'}
                  />
