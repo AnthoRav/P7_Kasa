@@ -32,7 +32,6 @@
     font-weight: 500;
     position: absolute;
     color: white;
-    /* font-family: "Montserrat"; */
   }
   
   @media (min-width: 481px) and (max-width: 1024px) {
