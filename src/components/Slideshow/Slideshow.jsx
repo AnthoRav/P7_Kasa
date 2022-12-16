@@ -18,7 +18,6 @@ function Slideshow({images}) {
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
-    //const noArrow = []
     
     return (
         <div className={SlideshowCSS.container}>
