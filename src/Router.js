@@ -11,8 +11,8 @@ function Routeur() {
               <Route path="/lodgings/:id" element={<LodgingCard />} />
               <Route path="/about" element={<About />} />
               <Route path="/*" element={<Error />} />
-              <Route path="/lodgings/*" element={<Error />} />
           </Routes>
     )
 }
+
 export default Routeur
